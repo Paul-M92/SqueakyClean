@@ -1,0 +1,29 @@
+<div style="text-align:center">
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>{{title}}</h1>
+    <p>contact us</p>
+  </div>
+</div>
+</div>
+<div style="text-align:center">
+	<form>
+		Email: <input type="email" ng-model="form.userEmail">
+		Message: <input type="text" ng-model="form.userM">
+		<input type="submit" ngClick="Submit">
+	</form>
+</div>
+
+<script>
+	var app = angular.module('angular4-client', []);
+	app.controller('FormCtrl', function ($scope, $http) {
+	    
+	    $scope.data = {
+	        emailaddress: "default"
+	    };
+	    $scope.submitForm = function() {
+	        console.log("posting data....");
+	        $http.post('http://localhost:8080/api/save', JSON.stringify(data)).success(function(){/*success callback*/});
+	    };
+	});
+</script>

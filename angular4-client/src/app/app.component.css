@@ -1,0 +1,42 @@
+h1 {
+	color: lightgrey;
+	font-size: 200%;
+}
+
+.jumbotron {
+    background-image: url(http://wallpaper-gallery.net/images/wallpaper-orange/wallpaper-orange-11.jpg);
+    padding-top:50px;
+}
+.spacer20 {
+    padding: 0.5em 0;
+    }
+    
+    
+/* *************
+2 Navigation Css
+**********************/
+.navbar {
+      font-family: helvetica, sans-serif;
+      margin-bottom: 0;
+      background-color: #b23e46;
+      border: 0;
+      font-size: 14px !important;
+      letter-spacing: 1px;
+      opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+      color: #fff !important;
+  }
+  
+ .navbar-nav li a:hover {
+      color: #e8ced0 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
